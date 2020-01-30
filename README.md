@@ -3,11 +3,11 @@ Benchmarking Merkle tree structures
 
 Preliminary benchmark results (in µs)
 
-Inserting 256 random key-value pairs into the different maps.
+Inserting 256 random key-value pairs into the different maps, persisting to disk.
 
-|                | insert     | insert persist     |
+|                | insert     | insert and persist |
 | -------------- |-----------:| ------------------:|
-| kelvin-hamt    | 120.37     | 645.28             |
-| kelvin-radix   | 176.08     | 807.46             |
-| kelvin-two3    | 226.26     | 1398.5             |
-| substrate-trie | 625.03     | N/A                |
+| kelvin-hamt    | 268        | 1308               |
+| kelvin-radix   | 176        | 736                |
+| kelvin-two3    | 233        | 1093               |
+| substrate-trie | 625        | N/A                |
