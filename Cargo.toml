@@ -1,0 +1,34 @@
+[package]
+name = "merkle-benchmarks"
+version = "0.1.0"
+authors = ["Kristoffer Ström <kristoffer@rymdkoloni.se>"]
+edition = "2018"
+
+[dependencies]
+criterion = "0.3"
+tempfile = "3.1"
+kelvin = "0.6.0"
+kelvin-radix = "0.2.0"
+kelvin-two3 = "0.2.0"
+kelvin-hamt = "0.3.0"
+rand = "0.7.3"
+memory-db = "0.18.1"
+reference-trie = "0.18.0"
+trie-db = "0.19.2"
+keccak-hasher = "0.15.2"
+
+[[bench]]
+name = "kelvin-radix"
+harness = false
+
+[[bench]]
+name = "kelvin-two3"
+harness = false
+
+[[bench]]
+name = "kelvin-hamt"
+harness = false
+
+[[bench]]
+name = "substrate-trie"
+harness = false
