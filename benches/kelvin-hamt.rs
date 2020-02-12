@@ -1,6 +1,6 @@
 use criterion::{black_box, criterion_group, criterion_main, Criterion};
 use kelvin::{Blake2b, Store};
-use kelvin_hamt::HAMT;
+use kelvin_hamt::DefaultHAMTMap as HAMT;
 
 fn insert_random_kvs() {
     let mut two3 = HAMT::<_, _, Blake2b>::new();

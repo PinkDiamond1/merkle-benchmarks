@@ -1,6 +1,6 @@
 use criterion::{black_box, criterion_group, criterion_main, Criterion};
 use kelvin::{Blake2b, Store};
-use kelvin_two3::Two3Tree;
+use kelvin_two3::DefaultTwo3Map as Two3Tree;
 
 fn insert_random_kvs() {
     let mut two3 = Two3Tree::<_, _, Blake2b>::new();

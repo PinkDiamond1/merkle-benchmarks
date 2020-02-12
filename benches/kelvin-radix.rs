@@ -1,6 +1,6 @@
 use criterion::{black_box, criterion_group, criterion_main, Criterion};
 use kelvin::{Blake2b, Store};
-use kelvin_radix::Radix;
+use kelvin_radix::DefaultRadixMap as Radix;
 
 fn insert_random_kvs() {
     let mut radix = Radix::<_, _, Blake2b>::new();
